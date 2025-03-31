@@ -1,0 +1,1 @@
+Este projeto consiste em um script desenvolvido em Shell Script para automatizar a criação de usuários, diretórios e permissões em um sistema Linux. O script foi testado em um ambiente Ubuntu 22.04 e tem como objetivo introduzir conceitos de Infraestrutura como Código, facilitando a administração de sistemas de forma automatizada e padronizada.
