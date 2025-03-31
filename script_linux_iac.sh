@@ -1,23 +1,20 @@
 #!/bin/bash
 
-echo "Criando diretórios"
+echo "criando diretórios"
 
-# Criando os diretorios
 mkdir /publico
 mkdir /adm
 mkdir /ven
 mkdir /sec
 
-echo "Criando grupos de usuários"
+echo "criando grupos de usuários"
 
-# Criando os grupos
 groupadd GRP_ADM
 groupadd GRP_VEN
 groupadd GRP_SEC
 
-echo "Criando usuários"
+echo "criando usuários"
 
-# Criando os usuarios
 useradd carlos -m -s /bin/bash -p $(openssl passwd -1 123)
 useradd maria -m -s /bin/bash -p $(openssl passwd -1 123)
 useradd joao -m -s /bin/bash -p $(openssl passwd -1 123)
@@ -28,9 +25,7 @@ useradd josefina -m -s /bin/bash -p $(openssl passwd -1 123)
 useradd amanda -m -s /bin/bash -p $(openssl passwd -1 123)
 useradd rogerio -m -s /bin/bash -p $(openssl passwd -1 123)
 
-echo "Adicionando usuários aos respectivos grupos"
-
-# Adicionando usuarios aos grupos
+echo "adicionando usuários aos grupos"
 
 usermod -aG GRP_ADM carlos
 usermod -aG GRP_ADM maria
